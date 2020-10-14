@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_alignParentTop="true"
+        android:layout_width="115dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:hint="Search:"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dep_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchText"
+        android:text="Choose departure city:"
+        android:layout_marginTop="7dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/dep"
+        android:layout_below="@id/dep_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/cities_dep" />
+    <EditText
+        android:id="@+id/date1"
+        android:layout_below="@id/dep"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="Choose date:"
+        android:inputType="datetime"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/arr_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date1"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:text="Choose arrival city:"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/arr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arr_text"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/cities_arr" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arr"
+        android:layout_marginTop="7dp"
+        android:hint="Choose date:"
+        android:layout_marginLeft="10dp"
+        android:inputType="datetime"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date2"
+        android:layout_marginTop="7dp"
+        android:text="Passengers:"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adults"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pas"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:text="Adults:"
+        android:textSize="12sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/children"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adults"
+        android:text="Children:"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/babies"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/children"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:text="Babies:"
+        android:textSize="12sp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/babies"
+        android:onClick="onClick"
+        android:text="Buy" />
+</RelativeLayout>
