@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"
+        android:hint="Search:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dep_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="0"
+        android:text="Choose departure city:"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/dep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:entries="@array/cities_dep"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:hint="Choose date:"
+        android:inputType="datetime"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/arr_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:text="Choose arrival city:"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/arr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/cities_arr" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:hint="Choose date:"
+        android:inputType="datetime"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:text="Passengers:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adults"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:text="Adults:"
+        android:textSize="12sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/children"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:text="Children:"
+        android:textSize="12sp"
+        android:inputType="number"/>
+    />
+
+    <EditText
+        android:id="@+id/babies"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:text="Babies:"
+        android:textSize="12sp"
+        android:inputType="number"/>
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_weight="0"
+        android:text="Buy" />
+</LinearLayout>
