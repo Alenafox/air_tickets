@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Air ticket</string>
+    <array name="cities_dep">
+        <item>Bucharest</item>
+        <item>Valencia</item>
+        <item>Warsaw</item>
+        <item>Washington</item>
+        <item>Vienna</item>
+    </array>
+    <array name="cities_arr">
+        <item>Havana</item>
+        <item>Glasgow</item>
+        <item>Dakar</item>
+        <item>Dresden</item>
+        <item>Dublin</item>
+    </array>
+</resources>
